@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+/*-- BASICS --*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Roboto", sans-serif;
+    color: #777;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+ }
+
+h2 {
+    color: #ef8319;
+    letter-spacing: 0.375em;
+}
+
+h3 {
+    font-weight: bold;
+    color: #ef8319;
+
+}
+
+p {
+    text-align: center;
+    margin-before: 0%;
+    margin-after: 2.5%;
+}
+
+dfn {
+    font-weight: bold;
+
+}
+
+code {
+    font-weight: bold;
+}
+
+ul, li {
+    text-align: center;
+    list-style-position: inside;
+}
+
+/*-- TEXT CLASSES--*/
+
+.descript {
+    position: center;
+    color: white;
+    text-align: center;
+    padding:10px 80px;
+
+}
+
+.paragraph-black {
+    position: relative;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 80px;
+
+}
+.paragraph-white {
+    position: relative;
+    color: #282E34;
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px 80px;
+    text-color: #000;
+
+}
+
+/*-- IMAGE CLASSES --*/
+
+.img-1, .img-2 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.img-1 {
+    background-image: url("../img/coding.jpeg");
+    min-height: 100%;
+}
+
+.img-2 {
+    background-image: url("../img/homework.jpeg");
+    min-height: 30%;
+}
+.img-3 {
+    background-image: url("../img/coding.jpeg");
+    min-height: 100%;
+}
+.caption-img-1 {
+   position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption-img-1 span.border {
+    background-color: #ef8319;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .img-1, .img-2, .img-3 {
+        background-attachment: scroll;
+    }
+}
