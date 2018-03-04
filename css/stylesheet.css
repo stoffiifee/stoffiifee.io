@@ -1,7 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
-
 
 /*-- BASICS --*/
 
@@ -12,11 +9,14 @@ body, html {
     color: #777;
 }
 
+header {
+    position: fixed;
+}
+
 h1, h2, h3 {
     text-align: center;
     text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
- }
+}
 
 h2 {
     color: #ef8319;
@@ -26,16 +26,13 @@ h2 {
 h3 {
     font-weight: bold;
     color: #ef8319;
-
 }
 
 p {
     text-align: center;
-    margin-before: 0%;
-    margin-after: 2.5%;
 }
 
-dfn {
+dfn, abbr {
     font-weight: bold;
 
 }
@@ -49,45 +46,41 @@ ul, li {
     list-style-position: inside;
 }
 
+a {
+    color: #ef8319;
+    font-weight: bold;
+}
 /*-- TEXT CLASSES--*/
 
-.descript {
-    position: center;
-    color: white;
+article {
+    color: #ddd;
+    background-color: #282E34;
     text-align: center;
-    padding:10px 80px;
+    padding: 0.625em 5em;
 
 }
 
-.paragraph-black {
+section {
     position: relative;
     color: #000;
     background-color: #fff;
     text-align: center;
-    padding: 10px 80px;
-
+    padding: 0.625em 5em;
 }
-.paragraph-white {
-    position: relative;
-    color: #282E34;
-    background-color: #ddd;
-    text-align: center;
-    padding: 10px 80px;
-    text-color: #000;
 
-}
+
 
 /*-- IMAGE CLASSES --*/
 
-.img-1, .img-2 {
+.img-1, .img-2, .img-3 {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
+
 .img-1 {
     background-image: url("../img/coding.jpeg");
     min-height: 100%;
@@ -97,13 +90,24 @@ ul, li {
     background-image: url("../img/homework.jpeg");
     min-height: 30%;
 }
+
 .img-3 {
-    background-image: url("../img/coding.jpeg");
-    min-height: 100%;
+    background-image: url("../img/agenda.jpeg");
+    min-height: 50%;
 }
+
 .caption-img-1 {
-   position: absolute;
-    left: 0%;
+    position: absolute;
+
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption-img-3 {
+    position: absolute;
+
     top: 50%;
     width: 100%;
     text-align: center;
@@ -113,9 +117,49 @@ ul, li {
 .caption-img-1 span.border {
     background-color: #ef8319;
     color: #fff;
-    padding: 18px;
+    padding: 1.125em;
     font-size: 25px;
 }
+
+/*-- TABLE --*/
+
+.tg {
+    padding-top: 5%;
+    padding-bottom: 20%;
+
+    margin-left: 25%;
+
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    font-weight: normal;
+    width: 50%;
+}
+
+.tg td {
+    padding: 0.625em 0.833em;
+    border-style: solid;
+    border-width: thin;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.tg th {
+    padding: 0.625em 0.833em;
+    border-style: solid;
+    border-width: thin;
+    overflow: hidden;
+    word-break: normal;
+    font-weight: normal;
+}
+
+.tg .important {
+    font-weight: bold;
+    background-color: #fd6864;
+    vertical-align: top
+}
+
+/*-- FOOTER --*/
 
 
 /* Turn off parallax scrolling for tablets and phones */
